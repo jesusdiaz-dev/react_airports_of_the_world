@@ -1,0 +1,79 @@
+[
+  {
+    "request": {
+      "url": "/allAirports",
+      "method": "GET"
+    },
+    "response": {
+      "status": 200,
+      "file": "data/all-airports.json"
+    }
+  },
+  {
+    "request": {
+      "url": "/airport",
+      "method": "POST",
+      "post": "{\"key\":\"BCN\"}"
+     
+    },
+    "response": {
+      "status": 200,
+      "file": "data/aiport-bcn.json"
+    }
+  },
+  {
+    "request": {
+      "url": "/airport",
+      "method": "POST",
+      "post": "{\"key\":\"MAD\"}"
+    },
+    "response": {
+      "status": 200,
+      "file": "data/aiport-mad.json"
+    }
+  },
+  {
+    "request": {
+      "url": "/airport",
+      "method": "POST",
+      "post": "{\"key\":\"CDG\"}"
+    },
+    "response": {
+      "status": 200,
+      "file": "data/aiport-cdg.json"
+    }
+  },
+  {
+    "request": {
+      "url": "/airport",
+      "method": "POST",
+      "post": "{\"key\":\"FCO\"}"
+    },
+    "response": {
+      "status": 200,
+      "file": "data/aiport-fco.json"
+    }
+  },
+  {
+    "request": {
+      "url": "/airport",
+      "method": "POST",
+      "post": "{\"key\":\"LHR\"}"
+    },
+    "response": {
+      "status": 200,
+      "file": "data/aiport-lhr.json"
+    }
+  },
+  {
+    "request": {
+      "url": "/airport",
+      "method": "POST",
+      "post": "{\"key\":\"LIS\"}"
+    },
+    "response": {
+      "status": 200,
+      "file": "data/aiport-lis.json"
+    }
+  }
+]
