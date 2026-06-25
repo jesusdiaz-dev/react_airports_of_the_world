@@ -17,7 +17,8 @@
 
     /* 1. Add your Path Aliases here */
     "paths": {
-      "@core/*": ["./src/core/*"]
+      "@core/*": ["./src/core/*"],
+      "@/*": ["./src/*"]
     },
 
     /* Linting */

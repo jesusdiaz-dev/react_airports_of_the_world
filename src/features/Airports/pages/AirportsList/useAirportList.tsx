@@ -44,7 +44,6 @@ const useAirportList = () : UseAirportListResult => {
     fetchAirports();
 
     return ()=>{
-          console.log('cleanup');
           cancelled = true;
       }
   },[reload])

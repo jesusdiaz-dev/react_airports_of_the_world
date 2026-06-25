@@ -35,7 +35,6 @@ const useAirportDetail = (id: string | undefined) => {
         fetchAirportDetail();
 
         return ()=>{
-            console.log('cleanup');
             cancelled = true;
         }
     },[id,triggerReload])

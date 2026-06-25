@@ -3,6 +3,8 @@ import Spinner from "../../../../shared/components/ui/spinner";
 import type { AirportSummary } from "@core/airports/airport.model";
 import AirportCardList from "./airport-card";
 import { Link } from "react-router-dom";
+import { Container } from "@/shared/components/ui/container";
+import TitlePage from "@/shared/components/ui/TitlePage";
 
 
 const AirportList = () => {
@@ -25,18 +27,20 @@ const AirportList = () => {
     </div>
   }else{
     return (
-      <div className="min-h-screen p-6">
-        <h1 className="text-3xl font-bold text-white mb-1">Airport List</h1>
-        <p className="text-white/60 text-sm mb-6">{airports.length} airports found</p>
-        <hr className="border-white/20 mb-6" />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-          {airports.map((airport: AirportSummary) => (
-            <Link to={`/airports/${airport.key}`} key={airport.key}>
-              <AirportCardList airport={airport} />
-            </Link>
-          ))}
+      <Container >
+        <div className="min-h-screen">
+          <TitlePage text="Airport List"/>
+          <p className="text-white/60 text-sm mb-6">{airports.length} airports found</p>
+          <hr className="border-white/20 mb-6" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            {airports.map((airport: AirportSummary) => (
+              <Link to={`/airports/${airport.key}`} key={airport.key}>
+                <AirportCardList airport={airport} />
+              </Link>
+            ))}
+          </div>
         </div>
-      </div>
+      </Container>
     )
   }
 

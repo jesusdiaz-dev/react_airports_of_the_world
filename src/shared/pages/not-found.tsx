@@ -7,7 +7,7 @@ const NotFound = () =>{
     }, []);
     
     return (
-        <div className="bg-gradient min-h-screen flex items-center justify-center p-6">
+        <div className=" min-h-screen flex items-center justify-center p-6">
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-8 text-center">
                 <h1 className="text-6xl font-bold text-white mb-4">404</h1>
                 <p className="text-white/60 text-lg mb-6">Page Not Found</p>

@@ -12,4 +12,4 @@
 ## Stack: 
     - native fetch for API calls
     - react router
-    - 
+    - shadcn for styles
