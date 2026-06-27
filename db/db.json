@@ -1,0 +1,58 @@
+{
+  "airports": [
+    {
+      "key": "BCN",
+      "name": "Josep Tarradellas",
+      "country": "Spain",
+      "city": "Barcelona",
+      "owner": "ENAIRE",
+      "build": "1961",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/73/T1_del_Aeropuerto_de_Barcelona-El_Prat.jpg"
+    },
+    {
+      "key": "MAD",
+      "name": "Adolfo Suárez Madrid",
+      "country": "Spain",
+      "city": "Madrid",
+      "owner": "ENAIRE",
+      "build": "1931",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Aeropuerto_de_Madrid-Barajas_-_Exterior_02.jpg"
+    },
+    {
+      "key": "CDG",
+      "name": "Charles de Gaulle",
+      "country": "France",
+      "city": "Paris",
+      "owner": "Paris Airports",
+      "build": "1974",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Charlesdegaulleairportaerial.jpg"
+    },
+    {
+      "key": "FCO",
+      "name": "Fiumicino",
+      "country": "Italy",
+      "city": "Roma",
+      "owner": "Public",
+      "build": "1960",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Aeroporto_Fiumicino_-_Torre_ENAV_ristrutturata_2015.jpeg/1540px-Aeroporto_Fiumicino_-_Torre_ENAV_ristrutturata_2015.jpeg"
+    },
+    {
+      "key": "LHR",
+      "name": "Heathrow",
+      "country": "United Kingdom",
+      "city": "London",
+      "owner": "BAA Limited",
+      "build": "1946",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/0d/London_-_Heathrow_%28LHR_-_EGLL%29_AN1572653.jpg"
+    },
+    {
+      "key": "LIS",
+      "name": "Humberto Delgado",
+      "country": "Portugal",
+      "city": "Lisbon",
+      "owner": "Vinci SA",
+      "build": "1942",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Aeroporto_Lisboa_-_panoramio.jpg/1600px-Aeroporto_Lisboa_-_panoramio.jpg"
+    }
+  ]
+}

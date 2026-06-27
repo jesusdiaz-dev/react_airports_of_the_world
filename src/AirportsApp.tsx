@@ -3,9 +3,7 @@ import { appRouter } from "./router/app.router"
 
 const AirportsApp = () => {
   return (
-    <div>
-      <RouterProvider router={appRouter} />
-    </div>
+    <RouterProvider router={appRouter} />
   )
 }
 

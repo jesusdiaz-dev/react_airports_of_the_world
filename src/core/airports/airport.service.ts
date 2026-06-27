@@ -6,7 +6,7 @@ const baseUrl = "http://localhost:1600";
 // Servicio equivalente al service en Angular, 
 // la logica de peticiones (que puede ser reutilizable) esta aca
 const getAllAirports = async (): Promise<Airport[]> => {
-    const response = await fetch(`${baseUrl}/allAirports`);
+    const response = await fetch(`${baseUrl}/airports`);
 
     handleError(response);
    
@@ -15,12 +15,8 @@ const getAllAirports = async (): Promise<Airport[]> => {
 };
 
 const getAirportById = async (key : string) : Promise <Airport > =>{
-    const response = await fetch (`${baseUrl}/airport/${key}`,{
-        method:'POST',
-        headers: {
-            'Content-Type':'application/json'
-        },
-        body: JSON.stringify({ key })
+    const response = await fetch (`${baseUrl}/airports/${key}`,{
+        method:'GET',
     });
 
     handleError(response);

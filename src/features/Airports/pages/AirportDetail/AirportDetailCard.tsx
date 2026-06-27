@@ -8,9 +8,10 @@ interface CardProps {
 
 const AirportDetailCard: React.FC<CardProps> = ({ airport }) => {
     return (
-        <Card className="max-w-3xl">
-            <div className="grid md:grid-cols-2 gap-0">
-                <div className=" h-64 md:h-auto ">
+        <Card className=" w-full max-w-md md:max-w-3xl ">
+            <div className="grid md:grid-cols-2 gap-0 p-4">
+                {/* <div className=" h-30 sm:h-64 md:h-auto aspect-video "> */}
+                <div className="  aspect-video ">
                     <img
                         src={airport.image}
                         alt={`airport ${airport.name}`}

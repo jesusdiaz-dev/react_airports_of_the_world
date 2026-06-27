@@ -3,7 +3,8 @@
 @import "shadcn/tailwind.css";
 @import "@fontsource-variable/geist";
 
-@custom-variant dark (&:is(.dark *));
+/* @custom-variant dark (&:is(.dark *)); */
+@custom-variant dark (&:is(.dark, .dark *));
 
 /* .bg-gradient {
   @apply bg-gradient-to-br from-lime-900 via-gray-900 to-lime-700;

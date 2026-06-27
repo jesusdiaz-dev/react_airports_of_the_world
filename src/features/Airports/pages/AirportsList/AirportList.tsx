@@ -28,7 +28,7 @@ const AirportList = () => {
   }else{
     return (
       <Container >
-        <div className="min-h-screen">
+        <div >
           <TitlePage text="Airport List"/>
           <p className="text-white/60 text-sm mb-6">{airports.length} airports found</p>
           <hr className="border-white/20 mb-6" />

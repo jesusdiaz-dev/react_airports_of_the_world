@@ -17,6 +17,13 @@ export const appRouter = createBrowserRouter([
                 children: airportRoutes  // ← directo, sin lazy wrapper, porque importa rutas.
             },
             {
+                path: 'login',
+                lazy: async ()=>{
+                    const { default : C } = await import('../features/Auth/Login')
+                    return { element : <C/>}
+                }
+            },
+            {
                 path: '*',
                 lazy: async () => {
                     const { default: C } = await import('../shared/pages/not-found');
