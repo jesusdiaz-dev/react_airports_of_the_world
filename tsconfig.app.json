@@ -18,6 +18,7 @@
     /* 1. Add your Path Aliases here */
     "paths": {
       "@core/*": ["./src/core/*"],
+      "@features/*": ["./src/features/*"],
       "@/*": ["./src/*"]
     },
 

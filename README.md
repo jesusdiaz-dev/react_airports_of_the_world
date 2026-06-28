@@ -9,15 +9,34 @@ For example:
     For the rest of the application, I used Axios and TanStack Query to leverage modern data-fetching practices.
 
 ## Best Practices: 
-    - Lazy loading for routes
-    - Service for API management
-    - feature based structure (services: Airports, Aircarft, Auth, Admin)
-    - handleError function private for DRY principle.
-    - Custom hooks for mantain functional components readables. 
-    - Handle side effects with cleanup function in useEffects (useAirportDetail, useAirportList).
-    - Separated routes for each feature (Airports, Admin)
 
-    - handle the errors in service layer to keep the application stable with controlled error responses.
+    -Fetching
+    - Service for API management / Some with fetch and another with axios.
+    - Tanstack Query for handling fetching statuses
+    
+    - Custom hooks for mantain functional components readables. 
+    
+    Architechture
+    - Feature based structure (services: Airports, Aircarft, Auth, Admin)
+
+    Framework's issues: 
+    - Handle side effects with cleanup function in useEffects (useAirportDetail, useAirportList).
+    
+    State Management:
+    - Store Patter for Auth State mannagement. 
+
+
+    Routing:
+    - Lazy loading for routes
+    - Separated routes for each feature (Airports, Admin)
+    - Protected Routing (Admin)
+
+    DRY:
+    - Content projection with {children} (component: Container, NavLink)
+    - HandleError function private for DRY principle.
+
+    Error Management
+    - Handle the errors in service layer to keep the application stable with controlled error responses.
 
 ## Stack: 
     - native fetch for API calls (Airports)
@@ -45,6 +64,5 @@ DELETE	/airports/BCN	Delete
 POST	/auth/login	    Login with mock token
 
 ## Features implemented:
-Context API : for light/dark theme
 useState: 
 useEffect: 

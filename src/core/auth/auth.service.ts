@@ -1,14 +1,9 @@
-import type { AuthResponse } from "./auth.model";
+import type { AuthResponse } from "./models/auth.model";
+import type { LoginCredentials } from "./models/login-credentials.model";
 
-const baseUrl = "http://localhost:1600";
+const baseUrl = import.meta.env.VITE_BASE_URL;
 
-interface LoginCredentials {
-    email:string; 
-    password:string
-}
-
-
-const login = async (credentials : LoginCredentials ) : Promise<AuthResponse> =>{
+const loginAction = async (credentials : LoginCredentials ) : Promise<AuthResponse> =>{
     const {email, password} = credentials;
     try{
         const resp = await fetch(`${baseUrl}/auth/login`,{
@@ -40,4 +35,4 @@ const login = async (credentials : LoginCredentials ) : Promise<AuthResponse> =>
     }
 }
 
-export {login};
+export {loginAction};

@@ -17,7 +17,7 @@ server.post('/auth/login', (req, res) => {
       token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidXNlcm5hbWUiOiJhZG1pbiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcwMDAwMDAwMCwiZXhwIjo5OTk5OTk5OTk5fQ.mock-signature',
       user: { 
         id: '1',                  
-        email: 'admin@example.com', 
+        email: 'jesusdiaz013@gmail.com', 
         fullName: 'Jesus Diaz',   
         isActive: true,           
         roles: ['admin']          
