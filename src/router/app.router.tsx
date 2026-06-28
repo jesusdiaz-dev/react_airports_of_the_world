@@ -33,7 +33,7 @@ export const appRouter = createBrowserRouter([
         ]
     },
     {
-        path: 'admin',
+        path: 'admin/dashboard',
         lazy: async () => {
             const { default: C } = await import('../features/Admin/pages/AdminPage');
             return { element: <C /> }

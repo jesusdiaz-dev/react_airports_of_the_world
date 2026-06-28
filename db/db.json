@@ -54,5 +54,151 @@
       "build": "1942",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Aeroporto_Lisboa_-_panoramio.jpg/1600px-Aeroporto_Lisboa_-_panoramio.jpg"
     }
+  ],
+  "flights": [
+  {
+    "id": "IB3456",
+    "origin": "MAD",
+    "destination": "BCN",
+    "departure": "2026-08-10T08:00:00",
+    "arrival": "2026-08-10T09:10:00",
+    "price": 89.99,
+    "seats": 180,
+    "availableSeats": 43,
+    "airline": "Iberia",
+    "status": "scheduled"
+  },
+  {
+    "id": "IB3457",
+    "origin": "BCN",
+    "destination": "MAD",
+    "departure": "2026-08-10T18:00:00",
+    "arrival": "2026-08-10T19:10:00",
+    "price": 79.99,
+    "seats": 180,
+    "availableSeats": 120,
+    "airline": "Iberia",
+    "status": "scheduled"
+  },
+  {
+    "id": "VY1234",
+    "origin": "BCN",
+    "destination": "LHR",
+    "departure": "2026-08-11T07:30:00",
+    "arrival": "2026-08-11T09:45:00",
+    "price": 134.99,
+    "seats": 200,
+    "availableSeats": 15,
+    "airline": "Vueling",
+    "status": "scheduled"
+  },
+  {
+    "id": "AF5678",
+    "origin": "MAD",
+    "destination": "CDG",
+    "departure": "2026-08-11T10:00:00",
+    "arrival": "2026-08-11T12:20:00",
+    "price": 159.99,
+    "seats": 220,
+    "availableSeats": 80,
+    "airline": "Air France",
+    "status": "scheduled"
+  },
+  {
+    "id": "AF5679",
+    "origin": "CDG",
+    "destination": "MAD",
+    "departure": "2026-08-12T14:00:00",
+    "arrival": "2026-08-12T16:20:00",
+    "price": 149.99,
+    "seats": 220,
+    "availableSeats": 5,
+    "airline": "Air France",
+    "status": "scheduled"
+  },
+  {
+    "id": "TP1010",
+    "origin": "LIS",
+    "destination": "CDG",
+    "departure": "2026-08-12T06:00:00",
+    "arrival": "2026-08-12T08:45:00",
+    "price": 119.99,
+    "seats": 160,
+    "availableSeats": 60,
+    "airline": "TAP Air Portugal",
+    "status": "scheduled"
+  },
+  {
+    "id": "BA2020",
+    "origin": "LHR",
+    "destination": "FCO",
+    "departure": "2026-08-13T09:00:00",
+    "arrival": "2026-08-13T12:30:00",
+    "price": 199.99,
+    "seats": 250,
+    "availableSeats": 90,
+    "airline": "British Airways",
+    "status": "scheduled"
+  },
+  {
+    "id": "AZ3030",
+    "origin": "FCO",
+    "destination": "BCN",
+    "departure": "2026-08-13T15:00:00",
+    "arrival": "2026-08-13T17:10:00",
+    "price": 109.99,
+    "seats": 170,
+    "availableSeats": 33,
+    "airline": "Alitalia",
+    "status": "scheduled"
+  },
+  {
+    "id": "IB9900",
+    "origin": "MAD",
+    "destination": "LIS",
+    "departure": "2026-08-14T07:00:00",
+    "arrival": "2026-08-14T08:15:00",
+    "price": 69.99,
+    "seats": 150,
+    "availableSeats": 0,
+    "airline": "Iberia",
+    "status": "sold-out"
+  },
+  {
+    "id": "FR4444",
+    "origin": "BCN",
+    "destination": "FCO",
+    "departure": "2026-08-14T11:00:00",
+    "arrival": "2026-08-14T13:00:00",
+    "price": 49.99,
+    "seats": 190,
+    "availableSeats": 110,
+    "airline": "Ryanair",
+    "status": "scheduled"
+  },
+  {
+    "id": "U24567",
+    "origin": "LHR",
+    "destination": "CDG",
+    "departure": "2026-08-15T08:00:00",
+    "arrival": "2026-08-15T10:05:00",
+    "price": 89.99,
+    "seats": 180,
+    "availableSeats": 22,
+    "airline": "easyJet",
+    "status": "scheduled"
+  },
+  {
+    "id": "TP2050",
+    "origin": "LIS",
+    "destination": "LHR",
+    "departure": "2026-08-15T13:00:00",
+    "arrival": "2026-08-15T15:30:00",
+    "price": 144.99,
+    "seats": 160,
+    "availableSeats": 48,
+    "airline": "TAP Air Portugal",
+    "status": "delayed"
+  }
   ]
 }

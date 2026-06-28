@@ -1,7 +1,15 @@
+import type { AuthResponse } from "./auth.model";
 
 const baseUrl = "http://localhost:1600";
 
-const login = async ({email, password}: {email:string; password:string})=>{
+interface LoginCredentials {
+    email:string; 
+    password:string
+}
+
+
+const login = async (credentials : LoginCredentials ) : Promise<AuthResponse> =>{
+    const {email, password} = credentials;
     try{
         const resp = await fetch(`${baseUrl}/auth/login`,{
             method: 'POST',
@@ -23,7 +31,7 @@ const login = async ({email, password}: {email:string; password:string})=>{
             throw new Error('An error has occurred');
         }
 
-        return resp;
+        return resp.json();
     }catch(error : unknown){ 
         if(error instanceof Error ){
             throw error;

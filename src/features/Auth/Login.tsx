@@ -17,6 +17,8 @@ const loginSchema = z.object({
 
 type LoginInputs = z.infer<typeof loginSchema>;
 
+
+
 const LoginPage: React.FC = () => {
 
     const navigate = useNavigate();
@@ -34,12 +36,12 @@ const LoginPage: React.FC = () => {
         try {
             setIsFetching(true)
             setError('');
-            await login({ email, password });
-            navigate(`dashboard`);
+            const resp = await login({ email, password });
+            localStorage.setItem('token',resp.token);
+            navigate(`/admin/dashboard`);
         } catch (error) {
             // if(!cancelled){
             setError('ocurrio un error')
-            console.log('aca');
             // }
         } finally {
             setIsFetching(false);
