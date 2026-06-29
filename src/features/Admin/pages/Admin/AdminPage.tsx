@@ -1,5 +1,7 @@
 import { Container } from "@/shared/components/ui/container";
 import { useAuthStore } from "@core/auth/store/auth.store"
+import { Outlet } from "react-router-dom";
+import { AdminTitle } from "./components/AdminTitle";
 
 
 const AdminPage = () => {
@@ -8,10 +10,11 @@ const AdminPage = () => {
 
   return (
     <Container>
-      <h1>Admin Page</h1>
-      <h2>Wellcome {user?.fullName}</h2>
-      <p>This is the admin page, just a simple page.</p>
+
+      <AdminTitle user={user}/>
       
+      <Outlet/>
+
     </Container>
 
   )

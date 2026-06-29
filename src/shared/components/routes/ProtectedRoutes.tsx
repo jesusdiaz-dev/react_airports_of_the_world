@@ -3,10 +3,10 @@
 
 import { useAuthStore } from "@core/auth/store/auth.store";
 import type { PropsWithChildren } from "react";
-import { Navigate } from "react-router-dom";
+import { Navigate, Outlet } from "react-router-dom";
 
 // No puede entrar a las rutas si NO esta autenticado 
-export const AuthenticatedRoute = ({children} : PropsWithChildren)=>{
+export const AuthenticatedRoute = ()=>{
     
     const { authStatus} = useAuthStore();
 
@@ -14,11 +14,11 @@ export const AuthenticatedRoute = ({children} : PropsWithChildren)=>{
     
     if(authStatus === 'not-authenticated') return <Navigate to="/login" />;
 
-    return children;
+    return <Outlet />;
 }
 
 // No puede entrar a las rutas si esta autenticado 
-export const NotAuthenticatedRoute = ({children} : PropsWithChildren)=>{
+export const NotAuthenticatedRoute = ()=>{
     
     const { authStatus} = useAuthStore();
 
@@ -26,11 +26,11 @@ export const NotAuthenticatedRoute = ({children} : PropsWithChildren)=>{
     
     if(authStatus === 'authenticated') return <Navigate to="/" />;
 
-    return children;
+    return <Outlet />;
 }
 
 // No puede entrar a las rutas si no es admin
-export const isAdminRoute = ({children} : PropsWithChildren)=>{
+export const isAdminRoute = ()=>{
     
     const { authStatus , isAdmin} = useAuthStore();
 
@@ -40,6 +40,6 @@ export const isAdminRoute = ({children} : PropsWithChildren)=>{
 
     if(!isAdmin()) return <Navigate to="/" />;
 
-    return children;
+    return <Outlet />;
 }
 

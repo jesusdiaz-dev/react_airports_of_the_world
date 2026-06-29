@@ -25,7 +25,7 @@ const LoginPage: React.FC = () => {
     
     return (
         
-        <div className="min-h-screen flex justify-center items-center">
+        <div className="min-h-screen flex justify-center items-center bg-gradient">
             <Container>
                 <main className="flex justify-center items-center" >
                     <Card className="m-auto  md:w-120 px-12" >

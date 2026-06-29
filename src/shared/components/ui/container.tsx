@@ -6,7 +6,7 @@ interface Props {
 
 export const Container = ({ children } : Props ) => {
     return (
-        <div className="mx-auto max-w-5xl px-6">
+        <div className="mx-auto px-8">
             {children}
         </div>
     );

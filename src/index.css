@@ -6,9 +6,9 @@
 /* @custom-variant dark (&:is(.dark *)); */
 @custom-variant dark (&:is(.dark, .dark *));
 
-/* .bg-gradient {
-  @apply bg-gradient-to-br from-lime-900 via-gray-900 to-lime-700;
-} */
+.bg-gradient {
+  @apply bg-linear-to-br from-zinc-700 via-neutral-900 to-stone-950;
+}
 
 
 @theme inline {
