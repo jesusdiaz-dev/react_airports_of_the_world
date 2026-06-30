@@ -2,8 +2,9 @@ import {Outlet } from "react-router-dom";
 import Footer from "../components/footer/footer";
 import { Header } from "../components/header/Header";
 import { SidebarProvider } from "@/components/ui/sidebar";
-import { AppSidebar } from "@features/Admin/pages/AppSidebar";
+
 import { useAuthStore } from "@core/auth/store/auth.store";
+import { AppSidebar } from "../components/sidebar/AppSidebar";
 
 export default function RootLayout() {
 
@@ -11,10 +12,7 @@ export default function RootLayout() {
 
     return (
         <>
-
-
             <SidebarProvider>
-
                 {
                     authStatus == 'authenticated'
                     &&
@@ -28,8 +26,7 @@ export default function RootLayout() {
                     <Footer />
                 </div>
             </SidebarProvider>
-
-        </>
+         </>
     );
 }
 
