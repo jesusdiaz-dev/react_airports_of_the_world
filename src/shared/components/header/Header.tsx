@@ -5,7 +5,7 @@ import { Separator } from "@/components/ui/separator"
 import { useAuthStore } from "@core/auth/store/auth.store"
 import { Link, NavLink } from "react-router-dom"
 import useLogout from "../../../core/auth/hooks/useLogout"
-import { Container } from "../ui/container"
+import { Container } from "../ui/Container"
 
 const commonLinks = [
   { label: "Home", href: "/" },

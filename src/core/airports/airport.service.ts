@@ -1,34 +1,36 @@
 import type { Airport } from "./airport.model";
+import { airportsApi } from "../api/airports.api";
+import { uuidv4 } from "zod";
+import { sleep } from "@/lib/sleep";
 
-
-const baseUrl = "http://localhost:1600";
-
-// Servicio equivalente al service en Angular, 
-// la logica de peticiones (que puede ser reutilizable) esta aca
 const getAllAirports = async (): Promise<Airport[]> => {
-    const response = await fetch(`${baseUrl}/airports`);
-
-    handleError(response);
-   
-    const data: Airport[] = await response.json();
+    const { data } = await airportsApi.get<Airport[]>('airports');
     return data;
 };
 
-const getAirportById = async (key : string) : Promise <Airport > =>{
-    const response = await fetch (`${baseUrl}/airports/${key}`,{
-        method:'GET',
-    });
-
-    handleError(response);
-
-    const data: Airport = await response.json();
+const getAirportById = async (key: string): Promise<Airport> => {
+    const { data } = await airportsApi.get<Airport>(`airports/${key}`);
     return data;
-}
+};
 
-function handleError(response : Response){
-     if (!response.ok) {
-        throw new Error(`HTTP error: ${response.status}`);
+// Lo dejo preparado para el update
+const createUpdateAirport = async (airportLike: Partial<Airport>): Promise<Airport> => {
+    
+    await sleep(1500); // simulo retraso
+
+    const isNew = !airportLike.id;
+
+    // Esto lo deberia generar la base de datos, pero aca lo simulo asi.
+    const newId = isNew ? crypto.randomUUID() : airportLike.id;
+    
+    if(isNew){
+        airportLike.id = newId;
     }
-}
 
-export { getAllAirports, getAirportById };
+    const { data } = isNew
+        ? await airportsApi.post<Airport>('airports', airportLike)
+        : await airportsApi.put<Airport>(`airports/${airportLike.key}`, airportLike);
+    return data;
+};
+
+export { getAllAirports, getAirportById, createUpdateAirport };

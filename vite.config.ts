@@ -12,5 +12,11 @@ export default defineConfig({
       '@features': path.resolve(__dirname, './src/features'),
       "@": path.resolve(__dirname, "./src"),
     }
-  }
+  },
+  server: {
+    watch: {
+      // Ignore changes in the db folder so the browser doesn't refresh
+      ignored: ['**/db/**'],
+    },
+  },
 })

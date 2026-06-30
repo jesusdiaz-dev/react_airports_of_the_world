@@ -4,9 +4,8 @@ In this project, my goal was to gain a deep understanding of how React works and
 Since this is a learning project, there are some features implemented with different technologies.. 
 
 For example: 
-    For the Airports feature, I used the native Fetch API and handled the fetching states manually to understand how React manages state without external libraries.
 
-    For the rest of the application, I used Axios and TanStack Query to leverage modern data-fetching practices.
+    In some pages I use Tanstack Query for fetching states, and in the Airport List and detail, I managed the state by my own.
 
 ## Best Practices: 
 

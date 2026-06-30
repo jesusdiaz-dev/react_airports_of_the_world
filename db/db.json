@@ -19,15 +19,6 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Aeropuerto_de_Madrid-Barajas_-_Exterior_02.jpg"
     },
     {
-      "key": "CDG",
-      "name": "Charles de Gaulle",
-      "country": "France",
-      "city": "Paris",
-      "owner": "Paris Airports",
-      "build": "1974",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Charlesdegaulleairportaerial.jpg"
-    },
-    {
       "key": "FCO",
       "name": "Fiumicino",
       "country": "Italy",
@@ -37,15 +28,6 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Aeroporto_Fiumicino_-_Torre_ENAV_ristrutturata_2015.jpeg/1540px-Aeroporto_Fiumicino_-_Torre_ENAV_ristrutturata_2015.jpeg"
     },
     {
-      "key": "LHR",
-      "name": "Heathrow",
-      "country": "United Kingdom",
-      "city": "London",
-      "owner": "BAA Limited",
-      "build": "1946",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/0/0d/London_-_Heathrow_%28LHR_-_EGLL%29_AN1572653.jpg"
-    },
-    {
       "key": "LIS",
       "name": "Humberto Delgado",
       "country": "Portugal",
@@ -53,152 +35,381 @@
       "owner": "Vinci SA",
       "build": "1942",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Aeroporto_Lisboa_-_panoramio.jpg/1600px-Aeroporto_Lisboa_-_panoramio.jpg"
+    },
+    {
+      "key": "AAA",
+      "name": "Jesús Diaz",
+      "country": "es",
+      "city": "ALC",
+      "owner": "empresa",
+      "build_year": "1230",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/Gibraltar_Airport_panorama.jpg",
+      "id": "3e082707-6dd0-44d5-862e-deddff3a6fcb"
+    },
+    {
+      "key": "BBB",
+      "name": "Otro",
+      "country": "pt",
+      "city": "BRG",
+      "owner": "empresa",
+      "build": "1229",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/Gibraltar_Airport_panorama.jpg",
+      "id": "df25d48d-d77b-4d86-993f-a238b7b49418"
+    },
+    {
+      "key": "CCC",
+      "name": "asdasd",
+      "country": "it",
+      "city": "NAP",
+      "owner": "empresa",
+      "build": "1229",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/Gibraltar_Airport_panorama.jpg",
+      "id": "5ca83723-12be-4332-a853-18e4503072d1"
+    },
+    {
+      "key": "DDD",
+      "name": "asd",
+      "country": "it",
+      "city": "MIL",
+      "owner": "empresa",
+      "build": "2132",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/Gibraltar_Airport_panorama.jpg",
+      "id": "d75414e4-889b-4d60-b5b1-8fed33972b02"
+    },
+    {
+      "key": "EEE",
+      "name": "asdasd",
+      "country": "it",
+      "city": "NAP",
+      "owner": "123123",
+      "build": "1228",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/Gibraltar_Airport_panorama.jpg",
+      "id": "f50878b3-6d36-414d-a274-e30f22db950c"
+    },
+    {
+      "key": "FFF",
+      "name": "Jesús Diaz",
+      "country": "it",
+      "city": "NAP",
+      "owner": "empresa",
+      "build": "12323",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/Gibraltar_Airport_panorama.jpg",
+      "id": "7ec7fcc6-cbfe-4f29-a87e-b4ef0f905f65"
+    },
+    {
+      "key": "GGG",
+      "name": "123",
+      "country": "it",
+      "city": "NAP",
+      "owner": "123123",
+      "build": "1232",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/Gibraltar_Airport_panorama.jpg",
+      "id": "b2efa4b1-d533-4331-a052-2aa72177e488"
+    },
+    {
+      "key": "HHH",
+      "name": "123",
+      "country": "es",
+      "city": "VLC",
+      "owner": "empresa",
+      "build": "1232",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/Gibraltar_Airport_panorama.jpg",
+      "id": "e2081aa9-5289-4a46-88e5-1f62637d859f"
+    },
+    {
+      "key": "III",
+      "name": "123123",
+      "country": "pt",
+      "city": "FAO",
+      "owner": "empresa",
+      "build": "1233",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/Gibraltar_Airport_panorama.jpg",
+      "id": "85b0224a-fc9e-46c1-8503-955fb798569a"
+    },
+    {
+      "key": "JJJ",
+      "name": "123213",
+      "country": "es",
+      "city": "BCN",
+      "owner": "aaaa",
+      "build": "1232",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/Gibraltar_Airport_panorama.jpg",
+      "id": "37502b2f-25d7-47a0-b801-4bbd01e8ec64"
+    },
+    {
+      "key": "ZZZ",
+      "name": "Jesús Diaz",
+      "country": "es",
+      "city": "BCN",
+      "owner": "empresa",
+      "build": "1233",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/Gibraltar_Airport_panorama.jpg",
+      "id": "3613c504-1f2d-4c12-b904-5f1faa4957b4"
     }
   ],
   "flights": [
-  {
-    "id": "IB3456",
-    "origin": "MAD",
-    "destination": "BCN",
-    "departure": "2026-08-10T08:00:00",
-    "arrival": "2026-08-10T09:10:00",
-    "price": 89.99,
-    "seats": 180,
-    "availableSeats": 43,
-    "airline": "Iberia",
-    "status": "scheduled"
-  },
-  {
-    "id": "IB3457",
-    "origin": "BCN",
-    "destination": "MAD",
-    "departure": "2026-08-10T18:00:00",
-    "arrival": "2026-08-10T19:10:00",
-    "price": 79.99,
-    "seats": 180,
-    "availableSeats": 120,
-    "airline": "Iberia",
-    "status": "scheduled"
-  },
-  {
-    "id": "VY1234",
-    "origin": "BCN",
-    "destination": "LHR",
-    "departure": "2026-08-11T07:30:00",
-    "arrival": "2026-08-11T09:45:00",
-    "price": 134.99,
-    "seats": 200,
-    "availableSeats": 15,
-    "airline": "Vueling",
-    "status": "scheduled"
-  },
-  {
-    "id": "AF5678",
-    "origin": "MAD",
-    "destination": "CDG",
-    "departure": "2026-08-11T10:00:00",
-    "arrival": "2026-08-11T12:20:00",
-    "price": 159.99,
-    "seats": 220,
-    "availableSeats": 80,
-    "airline": "Air France",
-    "status": "scheduled"
-  },
-  {
-    "id": "AF5679",
-    "origin": "CDG",
-    "destination": "MAD",
-    "departure": "2026-08-12T14:00:00",
-    "arrival": "2026-08-12T16:20:00",
-    "price": 149.99,
-    "seats": 220,
-    "availableSeats": 5,
-    "airline": "Air France",
-    "status": "scheduled"
-  },
-  {
-    "id": "TP1010",
-    "origin": "LIS",
-    "destination": "CDG",
-    "departure": "2026-08-12T06:00:00",
-    "arrival": "2026-08-12T08:45:00",
-    "price": 119.99,
-    "seats": 160,
-    "availableSeats": 60,
-    "airline": "TAP Air Portugal",
-    "status": "scheduled"
-  },
-  {
-    "id": "BA2020",
-    "origin": "LHR",
-    "destination": "FCO",
-    "departure": "2026-08-13T09:00:00",
-    "arrival": "2026-08-13T12:30:00",
-    "price": 199.99,
-    "seats": 250,
-    "availableSeats": 90,
-    "airline": "British Airways",
-    "status": "scheduled"
-  },
-  {
-    "id": "AZ3030",
-    "origin": "FCO",
-    "destination": "BCN",
-    "departure": "2026-08-13T15:00:00",
-    "arrival": "2026-08-13T17:10:00",
-    "price": 109.99,
-    "seats": 170,
-    "availableSeats": 33,
-    "airline": "Alitalia",
-    "status": "scheduled"
-  },
-  {
-    "id": "IB9900",
-    "origin": "MAD",
-    "destination": "LIS",
-    "departure": "2026-08-14T07:00:00",
-    "arrival": "2026-08-14T08:15:00",
-    "price": 69.99,
-    "seats": 150,
-    "availableSeats": 0,
-    "airline": "Iberia",
-    "status": "sold-out"
-  },
-  {
-    "id": "FR4444",
-    "origin": "BCN",
-    "destination": "FCO",
-    "departure": "2026-08-14T11:00:00",
-    "arrival": "2026-08-14T13:00:00",
-    "price": 49.99,
-    "seats": 190,
-    "availableSeats": 110,
-    "airline": "Ryanair",
-    "status": "scheduled"
-  },
-  {
-    "id": "U24567",
-    "origin": "LHR",
-    "destination": "CDG",
-    "departure": "2026-08-15T08:00:00",
-    "arrival": "2026-08-15T10:05:00",
-    "price": 89.99,
-    "seats": 180,
-    "availableSeats": 22,
-    "airline": "easyJet",
-    "status": "scheduled"
-  },
-  {
-    "id": "TP2050",
-    "origin": "LIS",
-    "destination": "LHR",
-    "departure": "2026-08-15T13:00:00",
-    "arrival": "2026-08-15T15:30:00",
-    "price": 144.99,
-    "seats": 160,
-    "availableSeats": 48,
-    "airline": "TAP Air Portugal",
-    "status": "delayed"
-  }
+    {
+      "id": "IB3456",
+      "origin": "MAD",
+      "destination": "BCN",
+      "departure": "2026-08-10T08:00:00",
+      "arrival": "2026-08-10T09:10:00",
+      "price": 89.99,
+      "seats": 180,
+      "availableSeats": 43,
+      "airline": "Iberia",
+      "status": "scheduled"
+    },
+    {
+      "id": "IB3457",
+      "origin": "BCN",
+      "destination": "MAD",
+      "departure": "2026-08-10T18:00:00",
+      "arrival": "2026-08-10T19:10:00",
+      "price": 79.99,
+      "seats": 180,
+      "availableSeats": 120,
+      "airline": "Iberia",
+      "status": "scheduled"
+    },
+    {
+      "id": "AZ3030",
+      "origin": "FCO",
+      "destination": "BCN",
+      "departure": "2026-08-13T15:00:00",
+      "arrival": "2026-08-13T17:10:00",
+      "price": 109.99,
+      "seats": 170,
+      "availableSeats": 33,
+      "airline": "Alitalia",
+      "status": "scheduled"
+    },
+    {
+      "id": "IB9900",
+      "origin": "MAD",
+      "destination": "LIS",
+      "departure": "2026-08-14T07:00:00",
+      "arrival": "2026-08-14T08:15:00",
+      "price": 69.99,
+      "seats": 150,
+      "availableSeats": 0,
+      "airline": "Iberia",
+      "status": "sold-out"
+    },
+    {
+      "id": "FR4444",
+      "origin": "BCN",
+      "destination": "FCO",
+      "departure": "2026-08-14T11:00:00",
+      "arrival": "2026-08-14T13:00:00",
+      "price": 49.99,
+      "seats": 190,
+      "availableSeats": 110,
+      "airline": "Ryanair",
+      "status": "scheduled"
+    },
+    {
+      "id": "TP2050",
+      "origin": "LIS",
+      "destination": "MAD",
+      "departure": "2026-08-15T13:00:00",
+      "arrival": "2026-08-15T15:30:00",
+      "price": 144.99,
+      "seats": 160,
+      "availableSeats": 48,
+      "airline": "TAP Air Portugal",
+      "status": "delayed"
+    }
+  ],
+  "countries": [
+    {
+      "id": "es",
+      "name": "Spain"
+    },
+    {
+      "id": "it",
+      "name": "Italy"
+    },
+    {
+      "id": "pt",
+      "name": "Portugal"
+    }
+  ],
+  "cities": [
+    {
+      "key": "BCN",
+      "name": "Barcelona",
+      "country": "es"
+    },
+    {
+      "key": "MAD",
+      "name": "Madrid",
+      "country": "es"
+    },
+    {
+      "key": "VLC",
+      "name": "Valencia",
+      "country": "es"
+    },
+    {
+      "key": "SVQ",
+      "name": "Sevilla",
+      "country": "es"
+    },
+    {
+      "key": "BIO",
+      "name": "Bilbao",
+      "country": "es"
+    },
+    {
+      "key": "ZAZ",
+      "name": "Zaragoza",
+      "country": "es"
+    },
+    {
+      "key": "AGP",
+      "name": "Málaga",
+      "country": "es"
+    },
+    {
+      "key": "ALC",
+      "name": "Alicante",
+      "country": "es"
+    },
+    {
+      "key": "VGO",
+      "name": "Vigo",
+      "country": "es"
+    },
+    {
+      "key": "GRX",
+      "name": "Granada",
+      "country": "es"
+    },
+    {
+      "key": "OVD",
+      "name": "Oviedo",
+      "country": "es"
+    },
+    {
+      "key": "SDR",
+      "name": "Santander",
+      "country": "es"
+    },
+    {
+      "key": "PMI",
+      "name": "Palma",
+      "country": "es"
+    },
+    {
+      "key": "TFN",
+      "name": "Santa Cruz de Tenerife",
+      "country": "es"
+    },
+    {
+      "key": "LPA",
+      "name": "Las Palmas",
+      "country": "es"
+    },
+    {
+      "key": "ROM",
+      "name": "Roma",
+      "country": "it"
+    },
+    {
+      "key": "MIL",
+      "name": "Milano",
+      "country": "it"
+    },
+    {
+      "key": "NAP",
+      "name": "Napoli",
+      "country": "it"
+    },
+    {
+      "key": "TRN",
+      "name": "Torino",
+      "country": "it"
+    },
+    {
+      "key": "FLR",
+      "name": "Firenze",
+      "country": "it"
+    },
+    {
+      "key": "VEN",
+      "name": "Venezia",
+      "country": "it"
+    },
+    {
+      "key": "BOL",
+      "name": "Bologna",
+      "country": "it"
+    },
+    {
+      "key": "PAL",
+      "name": "Palermo",
+      "country": "it"
+    },
+    {
+      "key": "CAG",
+      "name": "Cagliari",
+      "country": "it"
+    },
+    {
+      "key": "BRI",
+      "name": "Bari",
+      "country": "it"
+    },
+    {
+      "key": "LIS",
+      "name": "Lisbon",
+      "country": "pt"
+    },
+    {
+      "key": "OPO",
+      "name": "Porto",
+      "country": "pt"
+    },
+    {
+      "key": "FAO",
+      "name": "Faro",
+      "country": "pt"
+    },
+    {
+      "key": "BRG",
+      "name": "Braga",
+      "country": "pt"
+    },
+    {
+      "key": "CBS",
+      "name": "Coimbra",
+      "country": "pt"
+    },
+    {
+      "key": "STR",
+      "name": "Setúbal",
+      "country": "pt"
+    },
+    {
+      "key": "EVR",
+      "name": "Évora",
+      "country": "pt"
+    },
+    {
+      "key": "VIS",
+      "name": "Viseu",
+      "country": "pt"
+    },
+    {
+      "key": "PDL",
+      "name": "Ponta Delgada",
+      "country": "pt"
+    },
+    {
+      "key": "FNC",
+      "name": "Funchal",
+      "country": "pt"
+    }
   ]
 }

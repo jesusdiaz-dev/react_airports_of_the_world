@@ -1,9 +1,9 @@
 import useAirportList from "./useAirportList";
-import Spinner from "../../../../shared/components/ui/spinner";
+import Spinner from "../../../../shared/components/ui/Spinner";
 import type { AirportSummary } from "@core/airports/airport.model";
 import AirportCardList from "./airport-card";
 import { Link } from "react-router-dom";
-import { Container } from "@/shared/components/ui/container";
+import { Container } from "@/shared/components/ui/Container";
 import TitlePage from "@/shared/components/ui/TitlePage";
 
 

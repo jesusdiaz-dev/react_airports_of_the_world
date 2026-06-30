@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import useAirportDetail from "./useAirportDetail";
-import Spinner from "../../../../shared/components/ui/spinner";
+import Spinner from "../../../../shared/components/ui/Spinner";
 import AirportDetailCard from "./AirportDetailCard";
 import TitlePage from "../../../../shared/components/ui/TitlePage";
 

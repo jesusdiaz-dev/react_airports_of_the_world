@@ -1,10 +1,8 @@
-import { Link, Outlet } from "react-router-dom";
-import styles from './Layout.module.css';
+import {Outlet } from "react-router-dom";
 import Footer from "../components/footer/footer";
 import { Header } from "../components/header/Header";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import { AppSidebar } from "@features/Admin/pages/AppSidebar";
-import { Container } from "../components/ui/container";
 import { useAuthStore } from "@core/auth/store/auth.store";
 
 export default function RootLayout() {

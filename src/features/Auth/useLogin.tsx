@@ -17,14 +17,9 @@ const useLogin = ()=>{
 
     const [error, setError] = useState('');
     const [isFetching, setIsFetching] = useState(false);
-
     
     const navigate = useNavigate();
     const { handleLogin } = useAuthStore();
-
-  
-
-  
 
     const onSubmit: SubmitHandler<LoginInputs> = async ({ email, password }) => {
         try {
