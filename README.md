@@ -17,6 +17,7 @@ For example:
     
     Architechture
     - Feature based structure (services: Airports, Aircarft, Auth, Admin)
+    - Both public and private components are inside its own domain folder. (AdminAirporList & AirportList)
 
     Framework's issues: 
     - Handle side effects with cleanup function in useEffects (useAirportDetail, useAirportList).
@@ -33,6 +34,7 @@ For example:
     DRY:
     - Content projection with {children} (component: Container, NavLink)
     - HandleError function private for DRY principle.
+    - Custom component for basic inputs, with a label and error handling.
 
     Error Management
     - Handle the errors in service layer to keep the application stable with controlled error responses.

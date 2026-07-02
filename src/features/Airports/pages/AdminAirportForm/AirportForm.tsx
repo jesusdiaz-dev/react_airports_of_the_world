@@ -5,21 +5,39 @@ import { Controller } from 'react-hook-form';
 
 import { FormInputField } from '../../../../shared/components/ui/ChustomInput';
 import useAirportForm from './useAirportForm';
+import { Navigate, useNavigation, useParams } from 'react-router-dom';
+import useAirportDetail from '../AirportDetail/useAirportDetail';
 
 
 
 const AirportForm = () => {
+
+    const {id} = useParams();
+
+    const { error ,isLoading , airport , refetch } = useAirportDetail(id);
 
     const {
         control, errors, register,
         countries, cities,
         isCitiesPending,
         handleSubmit,onSubmitFn,handleCountryChange,
-     } = useAirportForm();
+     } = useAirportForm( { airport: airport ?? undefined } );
+    
+
+    if(error) {
+        <Navigate to="/admin/dashboard"/>
+    }
+
+    if(isLoading){
+        <Spinner className='h-8 w-8'></Spinner>
+    }
+
 
     return (
         <div>
             <h1 className="text-xl mb-8">Create a new Airport</h1>
+            
+
             <form 
                 className="space-y-6 max-w-md mx-auto p-6 bg-card rounded-lg border shadow-sm"
                 onSubmit={handleSubmit(onSubmitFn)}
@@ -63,7 +81,7 @@ const AirportForm = () => {
                                         <SelectContent>
                                             <SelectGroup>
                                                 {countries && countries.map((c) =>
-                                                    <SelectItem key={c.id} value={c.id}>{c.name}</SelectItem>
+                                                    <SelectItem key={c.id} value={c.name}>{c.name}</SelectItem>
                                                 )}
                                             </SelectGroup>
                                         </SelectContent>
@@ -91,7 +109,7 @@ const AirportForm = () => {
                                             <SelectContent>
                                                 <SelectGroup>
                                                     {cities && cities.map((city) =>
-                                                        <SelectItem key={city.key} value={city.key}>{city.name}</SelectItem>
+                                                        <SelectItem key={city.key} value={city.name}>{city.name}</SelectItem>
                                                     )}
                                                 </SelectGroup>
                                             </SelectContent>

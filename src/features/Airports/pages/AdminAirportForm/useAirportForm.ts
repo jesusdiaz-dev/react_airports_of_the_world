@@ -24,16 +24,21 @@ export const aiportSchema = z.object({
 
 export type AirportInputs = z.infer<typeof aiportSchema>;
 
-const useAirportForm = () => {
+interface Props {
+    airport ?: Airport;
+}
+
+const useAirportForm = ( { airport } : Props = {}) => {
 
     const [selectedCountry, setSelectedCountry] = useState<Country | null>(null);
 
-
+    // Crea el formulario
     const { register, handleSubmit, control, reset, formState: {errors}} = useForm<AirportInputs>({
         resolver: zodResolver(aiportSchema),
         mode: "onTouched",
     });
     
+    // Get de cities cuando, se habilita cuando hay un selected country
     const {
         isPending: isCitiesPending,
         error: citiesError,
@@ -45,6 +50,7 @@ const useAirportForm = () => {
         enabled: !!selectedCountry,
     })
 
+    // Get de Countries
     const {
         isPending: isCountriesPending,
         error: countriesError,
@@ -55,26 +61,44 @@ const useAirportForm = () => {
     })
 
     useEffect(() => {
-        if (countries && countries.length > 0 && !selectedCountry) {
-            setSelectedCountry(countries[0]);
-        }
-    }, [countries, selectedCountry])
+    
+    if (!countries || countries.length === 0) return;
+
+    if (airport) {
+        reset({
+            key: airport.key,
+            name: airport.name,
+            country: airport.country,
+            city: airport.city,
+            owner: airport.owner,
+            build: airport.build,
+            image: airport.image,
+        });
+
+        const country = countries.find(c => c.name === airport.country) ?? null;
+        setSelectedCountry(country);
+    } else if (!selectedCountry) {
+        setSelectedCountry(countries[0]); // modo "crear"
+    }
+}, [airport, countries, reset]);
     
     // A diferencia de useQuery que se ejecuta al iniciar el componente,
     // useMutation espera a que se ejecute 'mutation.mutate()' para dispararse.
     const mutation = useMutation({
         mutationFn: createUpdateAirport,
-        // onSuccess: ()=>{}
-        // onError: ()=>{}
     });
 
 
-
+    const handleCountryChange = (countryName: string) => {
+        const country = countries?.find(c => c.name === countryName) ?? null;
+        setSelectedCountry(country);
+    };
 
     const onSubmitFn = async ( airportLike : Partial<Airport> ) => {
         await mutation.mutateAsync( airportLike , {
             onSuccess: ()=>{
-                toast.success("Airport Created Successfully.",{ position: "top-right" })
+                const text = airport ? 'Updated' : 'Created';
+                toast.success(`Airport ${text} Successfully.`,{ position: "top-right" })
                 reset();
                 setSelectedCountry(countries![0]);
             },
@@ -87,18 +111,14 @@ const useAirportForm = () => {
         } );
     }
 
-    const handleCountryChange = (countryId: string) => {
-        const country = countries?.find(c => c.id === countryId) ?? null;
-        setSelectedCountry(country);
-    };
-
+    
     return {
         handleSubmit,
         control,
         errors,
         register,
 
-        isCitiesPending,
+        isCitiesPending: !!selectedCountry && isCitiesPending,
         onSubmitFn,
         mutation,
         countries,

@@ -1,6 +1,5 @@
 import type { Airport } from "./airport.model";
 import { airportsApi } from "../api/airports.api";
-import { uuidv4 } from "zod";
 import { sleep } from "@/lib/sleep";
 
 const getAllAirports = async (): Promise<Airport[]> => {
@@ -9,6 +8,7 @@ const getAllAirports = async (): Promise<Airport[]> => {
 };
 
 const getAirportById = async (key: string): Promise<Airport> => {
+    sleep(4000)
     const { data } = await airportsApi.get<Airport>(`airports/${key}`);
     return data;
 };
@@ -33,4 +33,10 @@ const createUpdateAirport = async (airportLike: Partial<Airport>): Promise<Airpo
     return data;
 };
 
-export { getAllAirports, getAirportById, createUpdateAirport };
+
+const deleteAirportById = async ( id : string ) : Promise< void > =>{
+    const { data } = await airportsApi.delete('airports/'+id);
+    return data;
+}
+
+export { getAllAirports, getAirportById, createUpdateAirport , deleteAirportById };

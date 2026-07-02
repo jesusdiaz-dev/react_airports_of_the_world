@@ -17,6 +17,13 @@ export const adminRoutes: RouteObject[] = [
             {
                 path: 'airports',
                 lazy: async () => {
+                    const { default: C } = await import('../Airports/pages/AdminAirportList/AdminAiportList');
+                    return { element: <C /> }
+                },
+            },
+            {
+                path: 'airport/:id',
+                lazy: async () => {
                     const { default: C } = await import('../Airports/pages/AdminAirportForm/AirportForm');
                     return { element: <C /> }
                 },
